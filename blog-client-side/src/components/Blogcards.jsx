@@ -4,15 +4,15 @@ import { FaUser } from 'react-icons/fa';
 
 const Blogcards = ({ blogs, currentPage, selectedCategory, pageSize }) => {
   // Filter and paginate blogs
-  const filteredBlogs = blogs
-    .filter((blog) => !selectedCategory || blog.category === selectedCategory)
+  const filteredBlogs = blogs.filter((blog) => !selectedCategory || blog.category === selectedCategory)
     .slice((currentPage - 1) * pageSize, currentPage * pageSize);
+    console.log(filteredBlogs)
 
   return (
     <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
       {
-        filteredBlogs.map((blog) => (
-          <Link to={`/blogs/${blog.id}`} key={blog.id} className="p-5 shadow-lg rounded cursor-pointer">
+        filteredBlogs.map((blog) => 
+          <Link to ={`/blogs/${blog.id}`} key={blog.id} className="p-5 shadow-lg rounded cursor-pointer">
             <div>
               <img src={blog.image} alt={blog.title || "Blog image"} className="w-full" />
             </div>
@@ -22,7 +22,7 @@ const Blogcards = ({ blogs, currentPage, selectedCategory, pageSize }) => {
             </p>
             <p className="text-sm text-gray-400">Published: {blog.published_date}</p>
           </Link>
-        ))
+        )
       }
     </div>
   );
