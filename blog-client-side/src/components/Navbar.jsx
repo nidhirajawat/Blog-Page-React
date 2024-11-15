@@ -54,11 +54,11 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         {/* Mobile menu button */}
-<div className='md:hidden block'>
-  <button onClick={toggleMenu} className='cursor-pointer'>
-    {isMemoOpen ? <FaXmark className='w-5 h-5' /> : <FaBars className="w-5 h-5" />}
-  </button>
-</div>
+        <div className='md:hidden block'>
+          <button onClick={toggleMenu} className='cursor-pointer'>
+            {isMemoOpen ? <FaXmark className='w-5 h-5' /> : <FaBars className="w-5 h-5" />}
+          </button>
+        </div>
 
       </nav>
 

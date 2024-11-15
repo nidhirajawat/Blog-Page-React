@@ -63,18 +63,19 @@ const Footer = () => {
               <button type="submit" className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-orange-500 hover:bg-orange-600 focus:outline-none">Subscribe</button>
             </form>
             <p className="mt-4 text-sm text-gray-500">Stay updated with the latest news and insights.</p>
-          </div>
-        </div>
-
-        {/* Footer Bottom Section */}
-        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
-          <p className="text-sm text-gray-500 text-center">© 2024 | All rights reserved</p>
-          <div className="flex items-center mt-4 space-x-4 sm:mt-0">
+            <div className="flex items-center mt-4 space-x-4 sm:mt-0 pt-5">
             <a href="/" className="text-gray-500 transition-colors duration-300 hover:text-orange-500"><FaTwitter className="h-6 w-6" /></a>
             <a href="/" className="text-gray-500 transition-colors duration-300 hover:text-orange-500"><FaInstagram className="h-6 w-6" /></a>
             <a href="/" className="text-gray-500 transition-colors duration-300 hover:text-orange-500"><FaFacebook className="h-6 w-6" /></a>
             <a href="/" className="text-gray-500 transition-colors duration-300 hover:text-orange-500"><FaLinkedin className="h-6 w-6" /></a>
           </div>
+          </div>
+        </div>
+
+        {/* Footer Bottom Section */}
+        <div className="flex flex-col justify-between text-center pt-5 pb-10 border-t border-gray-800 sm:flex-row">
+          <p className="text-sm text-gray-500 text-center">© 2024 | All rights reserved</p>
+          
         </div>
       </div>
     </div>
